@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Siegfried Bernard INACK BELL, full-stack web developer and IT manager.">
+    <meta name="keywords" content="Siegfried Bernard INACK BELL, full-stack developer, IT manager, portfolio, web development">
+    <title>Siegfried Bernard INACK BELL - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="home-content">
+                <img src="images/Me.jpg" alt="Siegfried Bernard INACK BELL" class="profile-img">
+                <div class="intro-text">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>I am Siegfried Bernard INACK BELL, a full-stack web developer and IT manager with expertise in creating innovative and efficient web solutions. My skills span across various technologies and methodologies, ensuring high-quality outcomes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Experienced Web Developer and IT Manager with over 10 years of expertise in designing and developing web applications, managing IT projects, and leading cross-functional teams. Proven track record of delivering high-quality solutions that enhance business operations and user experiences. Skilled in full-stack development, IT infrastructure management, and innovative problem-solving.</p>
+                <div class="about-grid">
+                    <div>
+                        <h3>Education</h3>
+                        <p>Master in Computer Science</p>
+                        <p>ESIG - PARIS</p>
+                    </div>
+                    <div>
+                        <h3>Work Experience</h3>
+                        <p>Senior Web Developer & IT Manager at Ministry of Housing and urban Development (15 years)</p>
+                        <p>Full-Stack Developer - Freelance (10 years)</p>
+                    </div>
+                    <div>
+                        <h3>Skills</h3>
+                        <p>Web Development: HTML, CSS, JavaScript, React, Angular, Node.js</p>
+                        <p>Backend Technologies: PHP, Python, Java, SQL, MongoDB, Firebase</p>
+                    </div>
+                    <div>
+                        <h3>Certifications</h3>
+                        <p>Microsoft Certified: Azure Fundamentals</p>
+                        <p>Google IT Support Professional Certificate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- Projects Section -->
+<section id="projects">
+    <div class="projects-content">
+        <h2>My Projects</h2>
+        <div class="slideshow-container">
+           
+            <div class="mySlides fade">
+                <img src="images/project2.jpg" style="width:100%">
+                <div class="text">Project 1: Mobile App - TETRIS GAME</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/project3.jpg" style="width:100%">
+                <div class="text">Project 2: SCIENTIFIC CALCULATOR</div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <!-- Next/Previous Buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="contact-content">
+                <h2>Contact</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
